@@ -1,0 +1,526 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		919C4B7A1E286DA200E90E1E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919C4B791E286DA200E90E1E /* AppDelegate.swift */; };
+		919C4B7C1E286DA200E90E1E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919C4B7B1E286DA200E90E1E /* ViewController.swift */; };
+		919C4B7F1E286DA200E90E1E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 919C4B7D1E286DA200E90E1E /* Main.storyboard */; };
+		919C4B811E286DA200E90E1E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 919C4B801E286DA200E90E1E /* Assets.xcassets */; };
+		919C4B841E286DA200E90E1E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 919C4B821E286DA200E90E1E /* LaunchScreen.storyboard */; };
+		919C4B8F1E286DA200E90E1E /* Tarea_1_TriangulosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919C4B8E1E286DA200E90E1E /* Tarea_1_TriangulosTests.swift */; };
+		919C4B9A1E286DA200E90E1E /* Tarea_1_TriangulosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919C4B991E286DA200E90E1E /* Tarea_1_TriangulosUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		919C4B8B1E286DA200E90E1E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 919C4B6E1E286DA200E90E1E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 919C4B751E286DA200E90E1E;
+			remoteInfo = "Tarea 1 Triangulos";
+		};
+		919C4B961E286DA200E90E1E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 919C4B6E1E286DA200E90E1E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 919C4B751E286DA200E90E1E;
+			remoteInfo = "Tarea 1 Triangulos";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		919C4B761E286DA200E90E1E /* Tarea 1 Triangulos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tarea 1 Triangulos.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		919C4B791E286DA200E90E1E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		919C4B7B1E286DA200E90E1E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		919C4B7E1E286DA200E90E1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		919C4B801E286DA200E90E1E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		919C4B831E286DA200E90E1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		919C4B851E286DA200E90E1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		919C4B8A1E286DA200E90E1E /* Tarea 1 TriangulosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tarea 1 TriangulosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		919C4B8E1E286DA200E90E1E /* Tarea_1_TriangulosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tarea_1_TriangulosTests.swift; sourceTree = "<group>"; };
+		919C4B901E286DA200E90E1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		919C4B951E286DA200E90E1E /* Tarea 1 TriangulosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tarea 1 TriangulosUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		919C4B991E286DA200E90E1E /* Tarea_1_TriangulosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tarea_1_TriangulosUITests.swift; sourceTree = "<group>"; };
+		919C4B9B1E286DA200E90E1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		919C4B731E286DA200E90E1E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		919C4B871E286DA200E90E1E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		919C4B921E286DA200E90E1E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		919C4B6D1E286DA200E90E1E = {
+			isa = PBXGroup;
+			children = (
+				919C4B781E286DA200E90E1E /* Tarea 1 Triangulos */,
+				919C4B8D1E286DA200E90E1E /* Tarea 1 TriangulosTests */,
+				919C4B981E286DA200E90E1E /* Tarea 1 TriangulosUITests */,
+				919C4B771E286DA200E90E1E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		919C4B771E286DA200E90E1E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				919C4B761E286DA200E90E1E /* Tarea 1 Triangulos.app */,
+				919C4B8A1E286DA200E90E1E /* Tarea 1 TriangulosTests.xctest */,
+				919C4B951E286DA200E90E1E /* Tarea 1 TriangulosUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		919C4B781E286DA200E90E1E /* Tarea 1 Triangulos */ = {
+			isa = PBXGroup;
+			children = (
+				919C4B791E286DA200E90E1E /* AppDelegate.swift */,
+				919C4B7B1E286DA200E90E1E /* ViewController.swift */,
+				919C4B7D1E286DA200E90E1E /* Main.storyboard */,
+				919C4B801E286DA200E90E1E /* Assets.xcassets */,
+				919C4B821E286DA200E90E1E /* LaunchScreen.storyboard */,
+				919C4B851E286DA200E90E1E /* Info.plist */,
+			);
+			path = "Tarea 1 Triangulos";
+			sourceTree = "<group>";
+		};
+		919C4B8D1E286DA200E90E1E /* Tarea 1 TriangulosTests */ = {
+			isa = PBXGroup;
+			children = (
+				919C4B8E1E286DA200E90E1E /* Tarea_1_TriangulosTests.swift */,
+				919C4B901E286DA200E90E1E /* Info.plist */,
+			);
+			path = "Tarea 1 TriangulosTests";
+			sourceTree = "<group>";
+		};
+		919C4B981E286DA200E90E1E /* Tarea 1 TriangulosUITests */ = {
+			isa = PBXGroup;
+			children = (
+				919C4B991E286DA200E90E1E /* Tarea_1_TriangulosUITests.swift */,
+				919C4B9B1E286DA200E90E1E /* Info.plist */,
+			);
+			path = "Tarea 1 TriangulosUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		919C4B751E286DA200E90E1E /* Tarea 1 Triangulos */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 919C4B9E1E286DA200E90E1E /* Build configuration list for PBXNativeTarget "Tarea 1 Triangulos" */;
+			buildPhases = (
+				919C4B721E286DA200E90E1E /* Sources */,
+				919C4B731E286DA200E90E1E /* Frameworks */,
+				919C4B741E286DA200E90E1E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Tarea 1 Triangulos";
+			productName = "Tarea 1 Triangulos";
+			productReference = 919C4B761E286DA200E90E1E /* Tarea 1 Triangulos.app */;
+			productType = "com.apple.product-type.application";
+		};
+		919C4B891E286DA200E90E1E /* Tarea 1 TriangulosTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 919C4BA11E286DA200E90E1E /* Build configuration list for PBXNativeTarget "Tarea 1 TriangulosTests" */;
+			buildPhases = (
+				919C4B861E286DA200E90E1E /* Sources */,
+				919C4B871E286DA200E90E1E /* Frameworks */,
+				919C4B881E286DA200E90E1E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				919C4B8C1E286DA200E90E1E /* PBXTargetDependency */,
+			);
+			name = "Tarea 1 TriangulosTests";
+			productName = "Tarea 1 TriangulosTests";
+			productReference = 919C4B8A1E286DA200E90E1E /* Tarea 1 TriangulosTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		919C4B941E286DA200E90E1E /* Tarea 1 TriangulosUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 919C4BA41E286DA200E90E1E /* Build configuration list for PBXNativeTarget "Tarea 1 TriangulosUITests" */;
+			buildPhases = (
+				919C4B911E286DA200E90E1E /* Sources */,
+				919C4B921E286DA200E90E1E /* Frameworks */,
+				919C4B931E286DA200E90E1E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				919C4B971E286DA200E90E1E /* PBXTargetDependency */,
+			);
+			name = "Tarea 1 TriangulosUITests";
+			productName = "Tarea 1 TriangulosUITests";
+			productReference = 919C4B951E286DA200E90E1E /* Tarea 1 TriangulosUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		919C4B6E1E286DA200E90E1E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Juan Luis Flores";
+				TargetAttributes = {
+					919C4B751E286DA200E90E1E = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					919C4B891E286DA200E90E1E = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 919C4B751E286DA200E90E1E;
+					};
+					919C4B941E286DA200E90E1E = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 919C4B751E286DA200E90E1E;
+					};
+				};
+			};
+			buildConfigurationList = 919C4B711E286DA200E90E1E /* Build configuration list for PBXProject "Tarea 1 Triangulos" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 919C4B6D1E286DA200E90E1E;
+			productRefGroup = 919C4B771E286DA200E90E1E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				919C4B751E286DA200E90E1E /* Tarea 1 Triangulos */,
+				919C4B891E286DA200E90E1E /* Tarea 1 TriangulosTests */,
+				919C4B941E286DA200E90E1E /* Tarea 1 TriangulosUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		919C4B741E286DA200E90E1E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				919C4B841E286DA200E90E1E /* LaunchScreen.storyboard in Resources */,
+				919C4B811E286DA200E90E1E /* Assets.xcassets in Resources */,
+				919C4B7F1E286DA200E90E1E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		919C4B881E286DA200E90E1E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		919C4B931E286DA200E90E1E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		919C4B721E286DA200E90E1E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				919C4B7C1E286DA200E90E1E /* ViewController.swift in Sources */,
+				919C4B7A1E286DA200E90E1E /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		919C4B861E286DA200E90E1E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				919C4B8F1E286DA200E90E1E /* Tarea_1_TriangulosTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		919C4B911E286DA200E90E1E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				919C4B9A1E286DA200E90E1E /* Tarea_1_TriangulosUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		919C4B8C1E286DA200E90E1E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 919C4B751E286DA200E90E1E /* Tarea 1 Triangulos */;
+			targetProxy = 919C4B8B1E286DA200E90E1E /* PBXContainerItemProxy */;
+		};
+		919C4B971E286DA200E90E1E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 919C4B751E286DA200E90E1E /* Tarea 1 Triangulos */;
+			targetProxy = 919C4B961E286DA200E90E1E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		919C4B7D1E286DA200E90E1E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				919C4B7E1E286DA200E90E1E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		919C4B821E286DA200E90E1E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				919C4B831E286DA200E90E1E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		919C4B9C1E286DA200E90E1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		919C4B9D1E286DA200E90E1E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		919C4B9F1E286DA200E90E1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Tarea 1 Triangulos/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Juan-Luis-Flores.Tarea-1-Triangulos";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		919C4BA01E286DA200E90E1E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Tarea 1 Triangulos/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Juan-Luis-Flores.Tarea-1-Triangulos";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		919C4BA21E286DA200E90E1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Tarea 1 TriangulosTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Juan-Luis-Flores.Tarea-1-TriangulosTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tarea 1 Triangulos.app/Tarea 1 Triangulos";
+			};
+			name = Debug;
+		};
+		919C4BA31E286DA200E90E1E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Tarea 1 TriangulosTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Juan-Luis-Flores.Tarea-1-TriangulosTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tarea 1 Triangulos.app/Tarea 1 Triangulos";
+			};
+			name = Release;
+		};
+		919C4BA51E286DA200E90E1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = "Tarea 1 TriangulosUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Juan-Luis-Flores.Tarea-1-TriangulosUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Tarea 1 Triangulos";
+			};
+			name = Debug;
+		};
+		919C4BA61E286DA200E90E1E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = "Tarea 1 TriangulosUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Juan-Luis-Flores.Tarea-1-TriangulosUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Tarea 1 Triangulos";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		919C4B711E286DA200E90E1E /* Build configuration list for PBXProject "Tarea 1 Triangulos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				919C4B9C1E286DA200E90E1E /* Debug */,
+				919C4B9D1E286DA200E90E1E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		919C4B9E1E286DA200E90E1E /* Build configuration list for PBXNativeTarget "Tarea 1 Triangulos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				919C4B9F1E286DA200E90E1E /* Debug */,
+				919C4BA01E286DA200E90E1E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		919C4BA11E286DA200E90E1E /* Build configuration list for PBXNativeTarget "Tarea 1 TriangulosTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				919C4BA21E286DA200E90E1E /* Debug */,
+				919C4BA31E286DA200E90E1E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		919C4BA41E286DA200E90E1E /* Build configuration list for PBXNativeTarget "Tarea 1 TriangulosUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				919C4BA51E286DA200E90E1E /* Debug */,
+				919C4BA61E286DA200E90E1E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 919C4B6E1E286DA200E90E1E /* Project object */;
+}
