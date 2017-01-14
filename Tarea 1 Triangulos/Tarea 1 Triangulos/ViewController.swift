@@ -49,6 +49,9 @@ class ViewController: UIViewController {
         if sCambio.isOn {
             
             btnCalcula.setTitle("Type of triangle",for: .normal)
+            img.isHidden = false
+            img.image = #imageLiteral(resourceName: "default")
+
         }
         if !sCambio.isOn {
             
@@ -67,25 +70,22 @@ class ViewController: UIViewController {
         if l1 != nil && l2 != nil && l3 != nil {
             
             if sCambio.isOn {
-                
+
                 if l1 == l2 && l2 == l3 && l1 == l3 {
                 
                     lblMensaje.isHidden = false
-                    img.isHidden = false
                     lblMensaje.text = "Equilateral"
                     img.image = #imageLiteral(resourceName: "Equilatero")
                 }
                 if l1 != l2 && l2 != l3 && l1 != l3  {
                     
                     lblMensaje.isHidden = false
-                    img.isHidden = false
                     lblMensaje.text = "Scalene"
                     img.image = #imageLiteral(resourceName: "Escaleno")
                 }
                 if (l1 == l2 && l1 != l3) || (l1 == l3 && l1 != l2) || (l2 == l3 && l2 != l1){
                     
                     lblMensaje.isHidden = false
-                    img.isHidden = false
                     lblMensaje.text = "Isosceles"
                     img.image = #imageLiteral(resourceName: "Isosceles")
 
