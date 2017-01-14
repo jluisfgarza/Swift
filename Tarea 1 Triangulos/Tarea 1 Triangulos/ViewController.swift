@@ -21,6 +21,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        updateswitchstate()
         lblMensaje.isHidden = true
     }
 
@@ -35,7 +37,25 @@ class ViewController: UIViewController {
         
         view.endEditing(true)
     }
+    
+    @IBAction func changefunc(_ sender: UISwitch) {
+        
+        updateswitchstate()
+    }
+    
+    func updateswitchstate() {
+        
+        if sCambio.isOn {
+            
+            btnCalcula.setTitle("Type of triangle",for: .normal)
+        }
+        if !sCambio.isOn {
+            
+            btnCalcula.setTitle("Get area",for: .normal)
+        }
 
+    }
+    
     @IBAction func Calcula(_ sender: UIButton) {
         
         let l1 = Double(tfLado1.text!)
@@ -45,19 +65,22 @@ class ViewController: UIViewController {
         if l1 != nil && l2 != nil && l3 != nil {
             
             if sCambio.isOn {
-                    
-                btnCalcula.setTitle("Type of triangle",for: .normal)
+                
+                img.isHidden = false
                 if l1 == l2 && l2 == l3 && l1 == l3 {
+                
                     lblMensaje.isHidden = false
                     lblMensaje.text = "Equilateral"
                     img.image = #imageLiteral(resourceName: "Equilatero")
                 }
                 if l1 != l2 && l2 != l3 && l1 != l3  {
+                    
                     lblMensaje.isHidden = false
                     lblMensaje.text = "Scalene"
                     img.image = #imageLiteral(resourceName: "Escaleno")
                 }
                 if (l1 == l2 && l1 != l3) || (l1 == l3 && l1 != l2) || (l2 == l3 && l2 != l1){
+                    
                     lblMensaje.isHidden = false
                     lblMensaje.text = "Isosceles"
                     img.image = #imageLiteral(resourceName: "Isosceles")
@@ -66,9 +89,11 @@ class ViewController: UIViewController {
                 view.endEditing(true)
             }
             if !sCambio.isOn {
-                btnCalcula.setTitle("Get area",for: .normal)
+               
+                img.isHidden = true
                 let s = (l1! + l2! + l3!)/2
                 let area = Double(sqrt(s * (s - l1!) * (s - l2!) * (s - l3!)))
+                lblMensaje.isHidden = false
                 lblMensaje.text = "The area is =  \(area)"
                 view.endEditing(true)
             }
