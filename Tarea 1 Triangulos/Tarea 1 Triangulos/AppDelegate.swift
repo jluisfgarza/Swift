@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  Tarea 1 Triangulos
 //
-//  Created by Abril González on 12/01/17.
+//  Created by Juan Luis Flores on 12/01/17.
 //  Copyright © 2017 Juan Luis Flores. All rights reserved.
 //
 

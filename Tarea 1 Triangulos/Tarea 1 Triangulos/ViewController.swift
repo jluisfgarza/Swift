@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  Tarea 1 Triangulos
 //
-//  Created by Abril González on 12/01/17.
+//  Created by Juan Luis Flores on 12/01/17.
 //  Copyright © 2017 Juan Luis Flores. All rights reserved.
 //
 
@@ -15,10 +15,13 @@ class ViewController: UIViewController {
     @IBOutlet weak var tfLado3: UITextField!
     @IBOutlet weak var sCambio: UISwitch!
     @IBOutlet weak var lblMensaje: UILabel!
+    @IBOutlet weak var btnCalcula: UIButton!
+    @IBOutlet weak var img: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        lblMensaje.isHidden = true
     }
 
     override func didReceiveMemoryWarning() {
@@ -33,23 +36,41 @@ class ViewController: UIViewController {
         view.endEditing(true)
     }
 
-    
     @IBAction func Calcula(_ sender: UIButton) {
-        /*
+        
         let l1 = Double(tfLado1.text!)
         let l2 = Double(tfLado2.text!)
         let l3 = Double(tfLado3.text!)
         
-        if tfLado1 != nil && tfLado2 != nil && tfLado2 != nil {
+        if l1 != nil && l2 != nil && l3 != nil {
             
-            if onState {
-                let s = (l1! + l2! + l3!)/2
-                let area = Double(sqrt(s * (s - l1!) * (s - l2!) * (s - l3!)))
-                lblMensaje.text = "El area es = " + area
+            if sCambio.isOn {
+                    
+                btnCalcula.setTitle("Type of triangle",for: .normal)
+                if l1 == l2 && l2 == l3 && l1 == l3 {
+                    lblMensaje.isHidden = false
+                    lblMensaje.text = "Equilateral"
+                    img.image = #imageLiteral(resourceName: "Equilatero")
+                }
+                if l1 != l2 && l2 != l3 && l1 != l3  {
+                    lblMensaje.isHidden = false
+                    lblMensaje.text = "Scalene"
+                    img.image = #imageLiteral(resourceName: "Escaleno")
+                }
+                if (l1 == l2 && l1 != l3) || (l1 == l3 && l1 != l2) || (l2 == l3 && l2 != l1){
+                    lblMensaje.isHidden = false
+                    lblMensaje.text = "Isosceles"
+                    img.image = #imageLiteral(resourceName: "Isosceles")
+
+                }
                 view.endEditing(true)
             }
-            if !onState {
-                aa
+            if !sCambio.isOn {
+                btnCalcula.setTitle("Get area",for: .normal)
+                let s = (l1! + l2! + l3!)/2
+                let area = Double(sqrt(s * (s - l1!) * (s - l2!) * (s - l3!)))
+                lblMensaje.text = "The area is =  \(area)"
+                view.endEditing(true)
             }
         }
         else {
@@ -59,7 +80,7 @@ class ViewController: UIViewController {
             alert.addAction(UIAlertAction(title: "OK" , style: .cancel, handler: nil))
             
             present(alert, animated: true, completion: nil)
-        }*/
+        }
     }
 }
 
