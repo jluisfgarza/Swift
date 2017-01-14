@@ -23,7 +23,6 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         
         updateswitchstate()
-        lblMensaje.isHidden = true
     }
 
     override func didReceiveMemoryWarning() {
@@ -44,14 +43,18 @@ class ViewController: UIViewController {
     }
     
     func updateswitchstate() {
-        
+
+        lblMensaje.isHidden = true
+
         if sCambio.isOn {
             
             btnCalcula.setTitle("Type of triangle",for: .normal)
+            img.isHidden = false
         }
         if !sCambio.isOn {
             
             btnCalcula.setTitle("Get area",for: .normal)
+            img.isHidden = true
         }
 
     }
@@ -66,7 +69,6 @@ class ViewController: UIViewController {
             
             if sCambio.isOn {
                 
-                img.isHidden = false
                 if l1 == l2 && l2 == l3 && l1 == l3 {
                 
                     lblMensaje.isHidden = false
@@ -90,7 +92,6 @@ class ViewController: UIViewController {
             }
             if !sCambio.isOn {
                
-                img.isHidden = true
                 let s = (l1! + l2! + l3!)/2
                 let area = Double(sqrt(s * (s - l1!) * (s - l2!) * (s - l3!)))
                 lblMensaje.isHidden = false
