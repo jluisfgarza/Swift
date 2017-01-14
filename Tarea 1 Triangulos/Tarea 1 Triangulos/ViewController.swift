@@ -95,7 +95,7 @@ class ViewController: UIViewController {
             if !sCambio.isOn {
                
                 let s = (l1! + l2! + l3!)/2
-                let area = Double(sqrt(s * (s - l1!) * (s - l2!) * (s - l3!)))
+                let area = String(format: "%.3f", Double(sqrt(s * (s - l1!) * (s - l2!) * (s - l3!))))
                 lblMensaje.isHidden = false
                 lblMensaje.text = "The area is =  \(area)"
                 view.endEditing(true)
