@@ -99,7 +99,14 @@ class ViewController: UIViewController {
                 let s = (l1! + l2! + l3!)/2
                 let area = String(format: "%.3f", Double(sqrt(s * (s - l1!) * (s - l2!) * (s - l3!))))
                 lblMensaje.isHidden = false
-                lblMensaje.text = "The area is =  \(area)"
+                let result: Double = Double(area)!
+                
+                if result <= 0.0 {
+                    lblMensaje.text = "Your 3 side lengths are invalid"
+                }
+                else if result > 0.0  {
+                    lblMensaje.text = "The area is =  \(area)"
+                }
                 view.endEditing(true)
             }
         }
