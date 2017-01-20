@@ -89,18 +89,12 @@ print("\n------------------------------------------")
 // 7. Declara un arreglo vacío de valores enteros
 // Haz un ciclo para agregar al arreglo vacío algunos valores
 // Muestra el contenido del arreglo usando un print con el nombre del arreglo
-/*func arrayNumbers(array: [Int]) {
-    var iT = array.count - 1
-    var iR = 0
-    for _ in iR...iT {
-        array.append = iR + 1
-        iR += 1
-    }
-}
 
-var numbers = [Int]()
-arrayNumbers (array: numbers)
-print(numbers)*/
+var num: [Int] = [Int]()
+for values in 1...10{
+    num.append(values)
+}
+print("\(num)")
 
 print("\n------------------------------------------")
 
@@ -110,6 +104,21 @@ print("\n------------------------------------------")
 // Crea un arreglo de números y llama a la función;
 // después muestra los valores que regresó
 
+func maxaverage (num:[Int]) -> (max:[Int], prom: Float) {
+    var max = 0
+    var average = 0
+    for num in num {
+        if num > max {
+            max = num
+        }
+        average += num
+    }
+    return([max], Float(average) / Float(num.count))
+}
+
+var array = [1,2,3,4,5]
+print(maxaverage(num: array))
+    
 print("\n------------------------------------------")
 
 // 9. Escribe la clase Artículo con los atributos ident, descrip, precio
@@ -118,26 +127,58 @@ print("\n------------------------------------------")
 // un método aumentaPrecio que reciba el porcentaje a aumentar como valor
 // entero y regrese el nuevo precio sin modificar el precio del objeto
 
+class Articulo {
+    var indent : Int
+    var descript: String
+    var precio: Double
+    
+    init() {
+        indent = 0
+        descript = ""
+        precio = 0.0
+    }
+    
+    init(fromArticulo indent: Int, descript:String, precio: Double) {
+        self.indent = indent
+        self.descript = descript
+        self.precio = precio
+    }
+}
 
 // 10. Crea un objeto de tipo Artículo usando el constructor default y luego
 // asigna un valor a cada uno de los atributos de ese objeto
 
+var leche = Articulo()
+leche.indent = 100
+leche.descript = "leche entera"
+leche.precio = 20.5
 
 // 11. Crea un artículo más usando el constructor con parámetros
-
+var jugo = Articulo(fromArticulo: 101, descript: "juego de mango", precio: 10.0 )
 
 // 12. Crea un arreglo que contenga los artículos creados en los 2 puntos anteriores
 // Usa un ciclo para mostrar (usando print) mensajes con los 3
 // datos de cada uno de los artículos de la lista
+var arts: [Articulo] = [leche, jugo]
 
+for articulo in arts {
+    print(articulo.indent, articulo.descript, articulo.precio)
+}
 
 // 13. Crea un artículo más usando cualquiera de los 2 constructores
 // Agrega el artículo a la posición inicial del arreglo
-
+var paleta = Articulo(fromArticulo: 102, descript: "Paleta de chile", precio: 5.0)
 
 // 14. Crea un artículo más usando cualquiera de los 2 constructores
 // Agrega el artículo al final del arreglo de objetos
+var pan = Articulo(fromArticulo: 103, descript: "pan blanco", precio: 22.0)
+
+arts.append(pan)
 
 print("\n------------------------------------------")
 
 // 15. Muestra de nuevo el contenido del arreglo de objetos
+
+for articulo in arts {
+    print(articulo.indent, articulo.descript, articulo.precio)
+}
