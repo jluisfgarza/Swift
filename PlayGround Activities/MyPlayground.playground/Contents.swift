@@ -1,10 +1,10 @@
 //: Playground - noun: a place where people can play
 
-import UIKit
+/*import UIKit
 
 var str = "Hello, playground"
 
-
+*/
 // 1. Escribe una función que reciba como parámetro un número (entre 1 y 10) y
 // muestre la tabla de multiplicar correspondiente
 // IMPORTANTE: Usa el estatuto for de swift
@@ -82,13 +82,25 @@ print("\n------------------------------------------")
 
 // 6. Muestra el nombre que se encuentra en la posición (x)
 // Usa un mensaje "En la posicion 2 se encuentra ...."
-
+print("En la posicion 2 se encuentra ...." + names[1])
 
 print("\n------------------------------------------")
 
 // 7. Declara un arreglo vacío de valores enteros
 // Haz un ciclo para agregar al arreglo vacío algunos valores
 // Muestra el contenido del arreglo usando un print con el nombre del arreglo
+/*func arrayNumbers(array: [Int]) {
+    var iT = array.count - 1
+    var iR = 0
+    for _ in iR...iT {
+        array.append = iR + 1
+        iR += 1
+    }
+}
+
+var numbers = [Int]()
+arrayNumbers (array: numbers)
+print(numbers)*/
 
 print("\n------------------------------------------")
 
@@ -129,5 +141,3 @@ print("\n------------------------------------------")
 print("\n------------------------------------------")
 
 // 15. Muestra de nuevo el contenido del arreglo de objetos
-
-
