@@ -16,7 +16,6 @@ class ViewController: UIViewController {
     let winningCombinations = [[0, 1, 2], [3, 4, 5], [6, 7, 8], [0, 3, 6], [1, 4, 7], [2, 5, 8], [0, 4, 8], [2, 4, 6]]
     var gameIsActive = true
     
-    @IBOutlet weak var label: UILabel!
     @IBOutlet weak var labelTURN: UILabel!
     @IBOutlet weak var playAgainButton: UIButton!
 
@@ -29,12 +28,12 @@ class ViewController: UIViewController {
             if (activePlayer == 1) {
                 
                 sender.setImage(UIImage(named: "Cross.png"), for: UIControlState())
-                labelTURN.text = "PLAYER 2"
+                labelTURN.text = "PLAYER O"
                 activePlayer = 2
             } else {
                 
                 sender.setImage(UIImage(named: "Nought.png"), for: UIControlState())
-                labelTURN.text = "PLAYER 1"
+                labelTURN.text = "PLAYER X"
                 activePlayer = 1
 
             }
@@ -46,15 +45,30 @@ class ViewController: UIViewController {
                 gameIsActive = false
                 
                 if gameState[combination[0]] == 1 {
+                   
+                    let alert = UIAlertController(title: "PLAYER X HAS WON!", message: "Congratulations", preferredStyle: .alert)
+                    alert.addAction(UIAlertAction(title: "OK" , style: .cancel, handler: nil))
+                    present(alert, animated: true, completion: nil)
                     
-                    label.text = "CROSS HAS WON!"
+                    for i in 1...9 {
+                        
+                        let button = view.viewWithTag(i) as! UIButton
+                        button.isEnabled = false
+                    }
+                    
                 } else {
+                   
+                    let alert = UIAlertController(title: "PLAYER O HAS WON!", message: "Congratulations", preferredStyle: .alert)
+                    alert.addAction(UIAlertAction(title: "OK" , style: .cancel, handler: nil))
+                    present(alert, animated: true, completion: nil)
                     
-                    label.text = "NOUGHT HAS WON!"
+                    for i in 1...9 {
+                        
+                        let button = view.viewWithTag(i) as! UIButton
+                        button.isEnabled = false
+                    }
+                    
                 }
-                playAgainButton.isHidden = false
-                label.isHidden = false
-                
             }
         }
         
@@ -71,25 +85,32 @@ class ViewController: UIViewController {
         
         if gameIsActive == false {
             
-            label.text = "IT WAS A DRAW"
-            label.isHidden = false
+            let alert = UIAlertController(title: "ITS A DRAW!", message: "Play again to get a winner!", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK" , style: .cancel, handler: nil))
+            present(alert, animated: true, completion: nil)
             playAgainButton.isHidden = false
+            
+            for i in 1...9 {
+                
+                let button = view.viewWithTag(i) as! UIButton
+                button.isEnabled = false
+            }
+            
         }
     
     }
 
     @IBAction func playAgain(_ sender: AnyObject) {
-        
+        labelTURN.text = "PLAYER X"
+
         gameState = [0, 0, 0, 0, 0, 0, 0, 0, 0]
         gameIsActive = true
         activePlayer = 1
         
-        playAgainButton.isHidden = true
-        label.isHidden = true
-        
         for i in 1...9 {
           
             let button = view.viewWithTag(i) as! UIButton
+            button.isEnabled = true
             button.setImage(nil, for: UIControlState())
         }
     }
@@ -103,7 +124,10 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+    
 }
 
