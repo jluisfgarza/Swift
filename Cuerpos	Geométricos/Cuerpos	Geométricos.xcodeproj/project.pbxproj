@@ -7,14 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		910843321E42ED2F007AB05B /* PrismaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910843311E42ED2F007AB05B /* PrismaViewController.swift */; };
 		91A707851E42736600B34A02 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A707841E42736600B34A02 /* AppDelegate.swift */; };
 		91A707871E42736600B34A02 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A707861E42736600B34A02 /* ViewController.swift */; };
 		91A7078A1E42736600B34A02 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91A707881E42736600B34A02 /* Main.storyboard */; };
 		91A7078C1E42736600B34A02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91A7078B1E42736600B34A02 /* Assets.xcassets */; };
 		91A7078F1E42736600B34A02 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91A7078D1E42736600B34A02 /* LaunchScreen.storyboard */; };
+		FBC9DEAF1E42AABA000DAB3A /* EsferaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC9DEAE1E42AABA000DAB3A /* EsferaViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		910843311E42ED2F007AB05B /* PrismaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrismaViewController.swift; sourceTree = "<group>"; };
 		91A707811E42736600B34A02 /* Cuerpos	Geométricos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cuerpos\tGeométricos.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		91A707841E42736600B34A02 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		91A707861E42736600B34A02 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		91A7078B1E42736600B34A02 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		91A7078E1E42736600B34A02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		91A707901E42736600B34A02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBC9DEAE1E42AABA000DAB3A /* EsferaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EsferaViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,8 @@
 			children = (
 				91A707841E42736600B34A02 /* AppDelegate.swift */,
 				91A707861E42736600B34A02 /* ViewController.swift */,
+				FBC9DEAE1E42AABA000DAB3A /* EsferaViewController.swift */,
+				910843311E42ED2F007AB05B /* PrismaViewController.swift */,
 				91A707881E42736600B34A02 /* Main.storyboard */,
 				91A7078B1E42736600B34A02 /* Assets.xcassets */,
 				91A7078D1E42736600B34A02 /* LaunchScreen.storyboard */,
@@ -136,6 +142,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				910843321E42ED2F007AB05B /* PrismaViewController.swift in Sources */,
+				FBC9DEAF1E42AABA000DAB3A /* EsferaViewController.swift in Sources */,
 				91A707871E42736600B34A02 /* ViewController.swift in Sources */,
 				91A707851E42736600B34A02 /* AppDelegate.swift in Sources */,
 			);
@@ -297,6 +305,7 @@
 				91A707951E42736600B34A02 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
