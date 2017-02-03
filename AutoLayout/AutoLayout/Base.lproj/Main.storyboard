@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1212" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina3_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -19,38 +18,36 @@
                         <viewControllerLayoutGuide type="bottom" id="YGc-Tp-9tb"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hal-Oh-5Ol">
-                                <rect key="frame" x="62" y="74" width="250" height="200"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hal-Oh-5Ol">
+                                <rect key="frame" x="62" y="74" width="195" height="106"/>
                                 <color key="backgroundColor" red="0.18823529410000001" green="0.51372549020000002" blue="0.98431372549999996" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SLu-7l-4lr">
-                                <rect key="frame" x="112" y="432" width="150" height="150"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SLu-7l-4lr">
+                                <rect key="frame" x="112" y="338" width="95" height="57"/>
                                 <color key="backgroundColor" red="0.66666666669999997" green="0.16078431369999999" blue="0.12941176469999999" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="43I-rg-juM">
-                                <rect key="frame" x="164" y="336" width="46" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="43I-rg-juM">
+                                <rect key="frame" x="137" y="225" width="46" height="30"/>
                                 <state key="normal" title="Button"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="SLu-7l-4lr" secondAttribute="trailing" constant="100" id="9ae-Cv-t37"/>
-                            <constraint firstItem="43I-rg-juM" firstAttribute="top" secondItem="hal-Oh-5Ol" secondAttribute="bottom" constant="50" id="EZt-Pc-LUh"/>
-                            <constraint firstItem="SLu-7l-4lr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="100" id="I1C-07-xNx"/>
-                            <constraint firstItem="43I-rg-juM" firstAttribute="top" secondItem="hal-Oh-5Ol" secondAttribute="bottom" constant="50" id="Z84-ly-XE6"/>
-                            <constraint firstItem="SLu-7l-4lr" firstAttribute="top" secondItem="43I-rg-juM" secondAttribute="bottom" constant="100" id="cqA-Yk-sNi"/>
-                            <constraint firstItem="hal-Oh-5Ol" firstAttribute="top" secondItem="8Br-FH-5mO" secondAttribute="bottom" constant="50" id="ctt-Ci-YTv"/>
-                            <constraint firstItem="hal-Oh-5Ol" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="40" id="eiI-C9-fSS"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="SLu-7l-4lr" secondAttribute="trailing" constant="94" id="lyC-dX-9TP"/>
-                            <constraint firstItem="43I-rg-juM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="148" id="oVl-FL-Rba"/>
-                            <constraint firstItem="YGc-Tp-9tb" firstAttribute="top" secondItem="SLu-7l-4lr" secondAttribute="bottom" constant="50" id="tf1-e1-Vfp"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="hal-Oh-5Ol" secondAttribute="trailing" constant="40" id="x8k-OK-TdD"/>
-                            <constraint firstItem="SLu-7l-4lr" firstAttribute="top" secondItem="43I-rg-juM" secondAttribute="bottom" constant="100" id="xR8-5n-Ntn"/>
-                            <constraint firstItem="SLu-7l-4lr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="92" id="xbY-WY-EgJ"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="43I-rg-juM" secondAttribute="trailing" constant="148" id="zhE-nK-xZh"/>
+                            <constraint firstAttribute="trailing" secondItem="hal-Oh-5Ol" secondAttribute="trailing" constant="63" id="3Hq-wc-lle"/>
+                            <constraint firstAttribute="trailing" secondItem="SLu-7l-4lr" secondAttribute="trailing" constant="113" id="64U-kI-McQ"/>
+                            <constraint firstItem="hal-Oh-5Ol" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="62" id="980-pq-b8O"/>
+                            <constraint firstItem="SLu-7l-4lr" firstAttribute="top" secondItem="43I-rg-juM" secondAttribute="bottom" constant="83" id="9Rv-Le-1Ob"/>
+                            <constraint firstItem="SLu-7l-4lr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="112" id="LeI-Fu-5oM"/>
+                            <constraint firstItem="43I-rg-juM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TKc-k9-QtR"/>
+                            <constraint firstItem="hal-Oh-5Ol" firstAttribute="top" secondItem="8Br-FH-5mO" secondAttribute="bottom" constant="54" id="Ur9-vw-ZEz"/>
+                            <constraint firstItem="SLu-7l-4lr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WVA-xf-RWd"/>
+                            <constraint firstItem="hal-Oh-5Ol" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="a4I-5M-WyZ"/>
+                            <constraint firstItem="43I-rg-juM" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="rts-cI-Nty"/>
+                            <constraint firstItem="43I-rg-juM" firstAttribute="top" secondItem="hal-Oh-5Ol" secondAttribute="bottom" constant="45" id="t1G-Hs-wfT"/>
+                            <constraint firstItem="YGc-Tp-9tb" firstAttribute="top" secondItem="SLu-7l-4lr" secondAttribute="bottom" constant="85" id="tIk-Ng-GFI"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -62,6 +59,6 @@
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+        <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
 </document>
