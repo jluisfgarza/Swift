@@ -2,54 +2,60 @@
 //  ViewController.swift
 //  Cuerpos	Geométricos
 //
-//  Created by Abril González on 01/02/17.
+//  Created by Juan Luis Flores on 01/02/17.
 //  Copyright © 2017 Juan Luis Flores. All rights reserved.
 //
 
 import UIKit
 
 class ViewController: UIViewController {
-
-    @IBOutlet weak var imgFoto: UIImageView!
-    @IBOutlet weak var lblInfo: UILabel!
-    @IBOutlet weak var lblVolume: UILabel!
     
-    var info :  String!
-    var volume : String!
+    @IBOutlet weak var imgFoto: UIImageView!
+    @IBOutlet weak var lbDatos: UILabel!
+    @IBOutlet weak var lbDatos2: UILabel!
+    @IBOutlet weak var lbDatos3: UILabel!
+    @IBOutlet weak var lbVolumen: UILabel!
+    
+    var Datos : String!
+    var Datos2 : String!
+    var Datos3 : String!
+    var volumen : String!
+    var imagen : UIImage!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func unwindEsfera(unwindSegue: UIStoryboardSegue ){
-        
+    // MARK: - Actions
+    
+    @IBAction func unwindEsfera(unwindSegue : UIStoryboardSegue){
+        lbDatos.text = Datos
+        lbDatos2.text = ""
+        lbDatos3.text = ""
+        lbVolumen.text = volumen
+        imgFoto.image = imagen
     }
     
-    @IBAction func unwindPrisma(unwindSegue: UIStoryboardSegue) {
-        
+    @IBAction func unwindPrisma(unwindSegue : UIStoryboardSegue){
+        lbDatos.text = Datos
+        lbDatos2.text = Datos2
+        lbDatos3.text = Datos3
+        lbVolumen.text = volumen
+        imgFoto.image = imagen
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "Esfera" {
-            let vistaesfera = segue.destination as! EsferaViewController
-            vistaesfera.radio = lblInfo.text!
-            vistaesfera.volume = lblVolume.text!
-        } else {
-            let vistaprisma = segue.destination as! PrismaViewController
-            vistaprisma.largo = lblInfo.text!
-            vistaprisma.ancho = lblVolume.text!
-            vistaprisma.altura = lblVolume.text!
-
-        }
+    @IBAction func inicio(_ sender: Any) {
+        imgFoto.image = #imageLiteral(resourceName: "CuerposGeometricos")
+        lbDatos.text = ""
+        lbDatos2.text = ""
+        lbDatos3.text = ""
+        lbVolumen.text = ""
     }
     
 }
-
-
-
