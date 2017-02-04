@@ -42,7 +42,7 @@
 		91A707781E42736600B34A02 = {
 			isa = PBXGroup;
 			children = (
-				91A707831E42736600B34A02 /* Cuerpos	Geométricos */,
+				91A707831E42736600B34A02 /* CuerposGeometricos */,
 				91A707821E42736600B34A02 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -55,7 +55,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		91A707831E42736600B34A02 /* Cuerpos	Geométricos */ = {
+		91A707831E42736600B34A02 /* CuerposGeometricos */ = {
 			isa = PBXGroup;
 			children = (
 				91A707841E42736600B34A02 /* AppDelegate.swift */,
@@ -67,6 +67,7 @@
 				91A7078D1E42736600B34A02 /* LaunchScreen.storyboard */,
 				91A707901E42736600B34A02 /* Info.plist */,
 			);
+			name = CuerposGeometricos;
 			path = "Cuerpos\tGeométricos";
 			sourceTree = "<group>";
 		};
@@ -106,7 +107,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 91A7077C1E42736600B34A02 /* Build configuration list for PBXProject "Cuerpos	Geométricos" */;
+			buildConfigurationList = 91A7077C1E42736600B34A02 /* Build configuration list for PBXProject "CuerposGeometricos" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -289,7 +290,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		91A7077C1E42736600B34A02 /* Build configuration list for PBXProject "Cuerpos	Geométricos" */ = {
+		91A7077C1E42736600B34A02 /* Build configuration list for PBXProject "CuerposGeometricos" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				91A707911E42736600B34A02 /* Debug */,
