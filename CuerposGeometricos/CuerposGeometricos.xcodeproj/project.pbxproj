@@ -67,8 +67,7 @@
 				91A7078D1E42736600B34A02 /* LaunchScreen.storyboard */,
 				91A707901E42736600B34A02 /* Info.plist */,
 			);
-			name = CuerposGeometricos;
-			path = "Cuerpos\tGeométricos";
+			path = CuerposGeometricos;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,7 +266,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = "Cuerpos\tGeométricos/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/CuerposGeometricos/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Juan-Luis-Flores.Cuerpos-Geome-tricos";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -279,7 +278,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = "Cuerpos\tGeométricos/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/CuerposGeometricos/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Juan-Luis-Flores.Cuerpos-Geome-tricos";
 				PRODUCT_NAME = "$(TARGET_NAME)";
