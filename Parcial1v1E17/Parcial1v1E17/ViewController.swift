@@ -63,7 +63,17 @@ class ViewController: UIViewController {
     
     @IBAction func slide(_ sender: UISlider) {
         let pos = myview1.frame.width - lbllettermobe.frame.width
-        lbllettermobe.frame.origin.x = pos * CGFloat(sender.value)
+        //lbllettermobe.frame.origin.x = pos * CGFloat(sender.value)
+        
+        if (sender.value < 0.3 && sender.value > 0){
+            lbllettermobe.frame.origin.x = (pos) * CGFloat(sender.value) - 30
+        }
+        else if (sender.value > 0.3 && sender.value < 0.65){
+            lbllettermobe.frame.origin.x = pos * CGFloat(sender.value)
+        }
+        else if (sender.value > 0.65 && sender.value < 1){
+            lbllettermobe.frame.origin.x = (pos) * CGFloat(sender.value) + 30
+        }
     }
 
     @IBAction func segmentchange(_ sender: UISegmentedControl) {
@@ -95,12 +105,12 @@ class ViewController: UIViewController {
         } else
         {
             let vistaOp = segue.destination as! operacionViewController
-            let dop1 = Double(operador1.text!)
-            let dop2 = Double(operador2.text!)
+            let dop1 = Double(operador1.text!)!
+            let dop2 = Double(operador2.text!)!
             
-            let resta = (dop1! - dop2!)
-            let sumar = (dop1! + dop2!)
-            let multi = (dop1! * dop2!)
+            let resta = (dop1 - dop2)
+            let sumar = (dop1 + dop2)
+            let multi = (dop1 * dop2)
             
             if segue.identifier == "suma"{
                 vistaOp.resultado = "\(dop1) + \(dop2) = \(sumar)"

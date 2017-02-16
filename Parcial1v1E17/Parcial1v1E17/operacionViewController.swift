@@ -15,13 +15,13 @@ class operacionViewController: UIViewController {
     @IBOutlet weak var tfmensaje: UITextField!
     @IBOutlet weak var btnRegresar: UIButton!
     
-    var operacion: String!
-    var resultado: String!
+    var operacion = ""
+    var resultado = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        lbloperacion.text = String(describing: operacion!)
-        lblResultado.text = String(describing: resultado!)
+        lbloperacion.text = (describing: operacion)
+        lblResultado.text = (describing: resultado)
         // Do any additional setup after loading the view.
     }
 
@@ -40,17 +40,4 @@ class operacionViewController: UIViewController {
         }
     }
     
-    /*override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
-        /*if sender as! UIButton == btGuardar{
-            if tfNombre.text! == "" || tfEmail.text! == "" {
-                let alerta = UIAlertController(title: "Error", message: "Los campos deben tener datos", preferredStyle: .alert)
-                alerta.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
-                present(alerta, animated: true, completion: nil)
-                return false
-            }
-        }
-        return true */
-    }*/
-
-
 }
