@@ -14,18 +14,16 @@ class ViewController: UIViewController {
     @IBOutlet weak var lbCalificacion: UILabel!
     @IBOutlet weak var textViewComentarios: UITextView!
     
-    var nombre: String!
-    var calificacion: Int!
-    var comentarios : String!
+    var actividad: Actividad!
+    var delegado : protocoloCalificaAlumno!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        lbNombreAlumno.text = String(describing: nombre!)
-        lbCalificacion.text = String(describing: calificacion!)
-        textViewComentarios.text = String(describing: comentarios!)
+        lbNombreAlumno.text = actividad.nombreAlum
+        lbCalificacion.text = "\(actividad.calif!)"
+        textViewComentarios.text = actividad.coment
         
-        self.title = nombre
+        title = "Calificar"
     }
 
     override func didReceiveMemoryWarning() {
@@ -34,15 +32,15 @@ class ViewController: UIViewController {
     }
     
     // MARK: - actions
-    // MARK: - Navigation
     
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
         if segue.identifier == "califica" {
-            let viewCalif = segue.destination as! ViewControllerCalifica
             
-            viewCalif.delegado = self
+            let viewCalifica = segue.destination as! ViewControllerCalifica
+            viewCalifica.delegado = delegado
         }
+        
     }
 }
 

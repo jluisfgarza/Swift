@@ -11,27 +11,19 @@ import UIKit
 class TableViewController: UITableViewController, protocoloCalificaAlumno {
     
     var listaAlumnos = [Actividad]()
+    var index : Int!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
         var alu1 = Actividad(nombreAlum: "Juan", calif: 100, coment: "juan@hotmail.com")
         listaAlumnos.append(alu1)
-        
         alu1 = Actividad(nombreAlum: "Luis", calif: 80, coment: "luis@hotmail.com")
         listaAlumnos.append(alu1)
-
-        
         alu1 = Actividad(nombreAlum: "Checo", calif: 100, coment: "checo@hotmail.com")
         listaAlumnos.append(alu1)
-
         
-        self.title = "titulo"
+        title = "Alumnos"
     }
 
     override func didReceiveMemoryWarning() {
@@ -56,13 +48,17 @@ class TableViewController: UITableViewController, protocoloCalificaAlumno {
         
         // Configure the cell...
         cell.textLabel?.text = listaAlumnos[indexPath.row].nombreAlum
+        cell.detailTextLabel?.text = String(listaAlumnos[indexPath.row].calif)
         return cell
     }
     
     func calificaAlumno(nombre: String, Calificacion: Int, Comentarios Comentatios: String) {
-        let Aluadd = Actividad(nombreAlum: nombre, calif: Calificacion, coment: Comentatios)
+        let actividad = Actividad(nombreAlum: nombre, calif: Calificacion, coment: Comentatios)
         
-        listaAlumnos.append(Aluadd)
+        listaAlumnos[index].nombreAlum = actividad.nombreAlum
+        listaAlumnos[index].calif = actividad.calif
+        listaAlumnos[index].coment = actividad.coment
+
         tableView.reloadData()
     }
     
@@ -77,13 +73,9 @@ class TableViewController: UITableViewController, protocoloCalificaAlumno {
             let vistaInfo = segue.destination as! ViewController
             let indexPath = tableView.indexPathForSelectedRow
             
-            vistaInfo.nombre = listaAlumnos[indexPath!.row].nombreAlum
-            vistaInfo.calificacion = listaAlumnos[indexPath!.row].calif
-            vistaInfo.comentarios = listaAlumnos[indexPath!.row].coment
-        }
-        else {
-            let viewCalif = segue.destination as! ViewControllerCalifica
-            viewCalif.delegado = self
+            vistaInfo.actividad = listaAlumnos[(indexPath?.row)!]
+            vistaInfo.delegado = self
+            index = indexPath?.row
         }
     }
 }

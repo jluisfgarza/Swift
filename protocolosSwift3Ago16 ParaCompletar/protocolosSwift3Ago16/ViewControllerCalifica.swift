@@ -25,6 +25,7 @@ class ViewControllerCalifica: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        title = "Detalle Alumno"
     }
 
     override func didReceiveMemoryWarning() {
@@ -43,16 +44,14 @@ class ViewControllerCalifica: UIViewController {
     }
     */
     @IBAction func listobtn(_ sender: UIButton) {
-        if (sender == btnlisto){
             let nom = tfnombre.text!
             let calif = Int(tfcalif.text!)
             let comen = txtview.text!
             
             if nom != "" && calif != nil && comen != "" {
                 delegado.calificaAlumno(nombre: nom, Calificacion: calif!, Comentarios: comen)
-            }
+                navigationController!.popToRootViewController(animated: true)
         }
-        navigationController!.popViewController(animated: true)
     }
 
 }
