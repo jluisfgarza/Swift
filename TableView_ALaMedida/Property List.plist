@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Tipo</key>
+		<string>iPhone 7 plus</string>
+		<key>Capacidad</key>
+		<string>128 Gb</string>
+		<key>UrlLimg</key>
+		<string>https://store.storeimages.cdn-apple.com/4974/as-images.apple.com/is/image/AppleInc/aos/published/images/i/ph/iphone7/plus/iphone7-plus-black-box-201609?wid=170&amp;hei=372&amp;fmt=jpeg&amp;qlt=95&amp;op_sharpen=0&amp;resMode=bicub&amp;op_usm=0.5,0.5,0,0&amp;iccEmbed=0&amp;layer=comp&amp;.v=1473360382971</string>
+		<key>Precio</key>
+		<real>20599</real>
+	</dict>
+	<dict>
+		<key>Tipo</key>
+		<string>iPhone 7</string>
+		<key>Capacidad</key>
+		<string>128 Gb</string>
+		<key>UrlLimg</key>
+		<string>https://store.storeimages.cdn-apple.com/4974/as-images.apple.com/is/image/AppleInc/aos/published/images/i/ph/iphone7/silver/iphone7-silver-box-201609?wid=164&amp;hei=372&amp;fmt=jpeg&amp;qlt=95&amp;op_sharpen=0&amp;resMode=bicub&amp;op_usm=0.5,0.5,0,0&amp;iccEmbed=0&amp;layer=comp&amp;.v=1473360389750</string>
+		<key>Precio</key>
+		<real>17799</real>
+	</dict>
+	<dict>
+		<key>Tipo</key>
+		<string>iPad Air 2</string>
+		<key>Capacidad</key>
+		<string>128 Gb</string>
+		<key>UrlLimg</key>
+		<string>https://store.storeimages.cdn-apple.com/4974/as-images.apple.com/is/image/AppleInc/aos/published/images/i/pa/ipad/air/ipad-air-select-gray-201410_GEO_MX?wid=470&amp;hei=556&amp;fmt=png-alpha&amp;qlt=95&amp;.v=1473798879136</string>
+		<key>Precio</key>
+		<real>11999</real>
+	</dict>
+	<dict>
+		<key>Tipo</key>
+		<string>iPhone Pro</string>
+		<key>Capacidad</key>
+		<string>256 Gb</string>
+		<key>UrlLimg</key>
+		<string>https://store.storeimages.cdn-apple.com/4974/as-images.apple.com/is/image/AppleInc/aos/published/images/i/pa/ipad/pro/ipad-pro-9in-select-spacegray-201603_GEO_MX?wid=470&amp;hei=556&amp;fmt=png-alpha&amp;qlt=95&amp;.v=1473874670674</string>
+		<key>Precio</key>
+		<real>18999</real>
+	</dict>
+</array>
+</plist>
