@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "31BE619F1E64EB9500D3C4F9"
-               BuildableName = "CeldasEstaticas.app"
-               BlueprintName = "CeldasEstaticas"
-               ReferencedContainer = "container:CeldasEstaticas.xcodeproj">
+               BlueprintIdentifier = "31BE615F1E64E3C300D3C4F9"
+               BuildableName = "CeldasMedida.app"
+               BlueprintName = "CeldasMedida"
+               ReferencedContainer = "container:CeldasMedida.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,30 +32,30 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "31BE61B31E64EB9600D3C4F9"
-               BuildableName = "CeldasEstaticasTests.xctest"
-               BlueprintName = "CeldasEstaticasTests"
-               ReferencedContainer = "container:CeldasEstaticas.xcodeproj">
+               BlueprintIdentifier = "31BE61731E64E3C300D3C4F9"
+               BuildableName = "CeldasMedidaTests.xctest"
+               BlueprintName = "CeldasMedidaTests"
+               ReferencedContainer = "container:CeldasMedida.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "31BE61BE1E64EB9600D3C4F9"
-               BuildableName = "CeldasEstaticasUITests.xctest"
-               BlueprintName = "CeldasEstaticasUITests"
-               ReferencedContainer = "container:CeldasEstaticas.xcodeproj">
+               BlueprintIdentifier = "31BE617E1E64E3C300D3C4F9"
+               BuildableName = "CeldasMedidaUITests.xctest"
+               BlueprintName = "CeldasMedidaUITests"
+               ReferencedContainer = "container:CeldasMedida.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "31BE619F1E64EB9500D3C4F9"
-            BuildableName = "CeldasEstaticas.app"
-            BlueprintName = "CeldasEstaticas"
-            ReferencedContainer = "container:CeldasEstaticas.xcodeproj">
+            BlueprintIdentifier = "31BE615F1E64E3C300D3C4F9"
+            BuildableName = "CeldasMedida.app"
+            BlueprintName = "CeldasMedida"
+            ReferencedContainer = "container:CeldasMedida.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -75,10 +75,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "31BE619F1E64EB9500D3C4F9"
-            BuildableName = "CeldasEstaticas.app"
-            BlueprintName = "CeldasEstaticas"
-            ReferencedContainer = "container:CeldasEstaticas.xcodeproj">
+            BlueprintIdentifier = "31BE615F1E64E3C300D3C4F9"
+            BuildableName = "CeldasMedida.app"
+            BlueprintName = "CeldasMedida"
+            ReferencedContainer = "container:CeldasMedida.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -94,10 +94,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "31BE619F1E64EB9500D3C4F9"
-            BuildableName = "CeldasEstaticas.app"
-            BlueprintName = "CeldasEstaticas"
-            ReferencedContainer = "container:CeldasEstaticas.xcodeproj">
+            BlueprintIdentifier = "31BE615F1E64E3C300D3C4F9"
+            BuildableName = "CeldasMedida.app"
+            BlueprintName = "CeldasMedida"
+            ReferencedContainer = "container:CeldasMedida.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

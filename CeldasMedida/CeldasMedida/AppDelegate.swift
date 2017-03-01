@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  CeldasEstaticas
+//  CeldasMedida
 //
 //  Created by Juan Luis Flores on 2/27/17.
 //  Copyright © 2017 Juan Luis Flores. All rights reserved.

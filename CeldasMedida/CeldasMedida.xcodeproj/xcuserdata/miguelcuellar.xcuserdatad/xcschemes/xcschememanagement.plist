@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>CeldasEstaticas.xcscheme</key>
+		<key>CeldasMedida.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,17 +12,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>31BE619F1E64EB9500D3C4F9</key>
+		<key>31BE615F1E64E3C300D3C4F9</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>31BE61B31E64EB9600D3C4F9</key>
+		<key>31BE61731E64E3C300D3C4F9</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>31BE61BE1E64EB9600D3C4F9</key>
+		<key>31BE617E1E64E3C300D3C4F9</key>
 		<dict>
 			<key>primary</key>
 			<true/>
