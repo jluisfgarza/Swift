@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "FB94FABE1E71D260009EBCDA"
-               BuildableName = "Ejercicio de Persistencia.app"
-               BlueprintName = "Ejercicio de Persistencia"
-               ReferencedContainer = "container:Ejercicio de Persistencia.xcodeproj">
+               BlueprintIdentifier = "3179CC6F1E71FCB90052594A"
+               BuildableName = "EjercicioPersistencia.app"
+               BlueprintName = "EjercicioPersistencia"
+               ReferencedContainer = "container:EjercicioPersistencia.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,10 +32,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "FB94FABE1E71D260009EBCDA"
-            BuildableName = "Ejercicio de Persistencia.app"
-            BlueprintName = "Ejercicio de Persistencia"
-            ReferencedContainer = "container:Ejercicio de Persistencia.xcodeproj">
+            BlueprintIdentifier = "3179CC6F1E71FCB90052594A"
+            BuildableName = "EjercicioPersistencia.app"
+            BlueprintName = "EjercicioPersistencia"
+            ReferencedContainer = "container:EjercicioPersistencia.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -55,10 +55,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "FB94FABE1E71D260009EBCDA"
-            BuildableName = "Ejercicio de Persistencia.app"
-            BlueprintName = "Ejercicio de Persistencia"
-            ReferencedContainer = "container:Ejercicio de Persistencia.xcodeproj">
+            BlueprintIdentifier = "3179CC6F1E71FCB90052594A"
+            BuildableName = "EjercicioPersistencia.app"
+            BlueprintName = "EjercicioPersistencia"
+            ReferencedContainer = "container:EjercicioPersistencia.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -74,10 +74,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "FB94FABE1E71D260009EBCDA"
-            BuildableName = "Ejercicio de Persistencia.app"
-            BlueprintName = "Ejercicio de Persistencia"
-            ReferencedContainer = "container:Ejercicio de Persistencia.xcodeproj">
+            BlueprintIdentifier = "3179CC6F1E71FCB90052594A"
+            BuildableName = "EjercicioPersistencia.app"
+            BlueprintName = "EjercicioPersistencia"
+            ReferencedContainer = "container:EjercicioPersistencia.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

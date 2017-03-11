@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  Ejercicio de Persistencia
+//  EjercicioPersistencia
 //
-//  Created by alumno on 3/9/17.
+//  Created by Juan Luis Flores on 3/9/17.
 //  Copyright © 2017 Juan Luis Flores. All rights reserved.
 //
 
