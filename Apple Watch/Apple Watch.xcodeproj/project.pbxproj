@@ -16,10 +16,12 @@
 		075ADB841E8347CC00681CB8 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 075ADB821E8347CC00681CB8 /* Interface.storyboard */; };
 		075ADB861E8347CC00681CB8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 075ADB851E8347CC00681CB8 /* Assets.xcassets */; };
 		075ADB8D1E8347CC00681CB8 /* Apple Watch WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 075ADB8C1E8347CC00681CB8 /* Apple Watch WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		075ADB941E8347CC00681CB8 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075ADB931E8347CC00681CB8 /* InterfaceController.swift */; };
 		075ADB961E8347CC00681CB8 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075ADB951E8347CC00681CB8 /* ExtensionDelegate.swift */; };
-		075ADB981E8347CC00681CB8 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075ADB971E8347CC00681CB8 /* NotificationController.swift */; };
 		075ADB9A1E8347CC00681CB8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 075ADB991E8347CC00681CB8 /* Assets.xcassets */; };
+		372C0BCA1E85F5D6000C9BC9 /* Monitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372C0BC91E85F5D6000C9BC9 /* Monitor.swift */; };
+		372C0BCC1E85F5E0000C9BC9 /* Memoria.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372C0BCB1E85F5E0000C9BC9 /* Memoria.swift */; };
+		372C0BCE1E85F5F5000C9BC9 /* Accesorios.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372C0BCD1E85F5F5000C9BC9 /* Accesorios.swift */; };
+		372C0BD01E85F600000C9BC9 /* Resumen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372C0BCF1E85F600000C9BC9 /* Resumen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,11 +80,13 @@
 		075ADB871E8347CC00681CB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		075ADB8C1E8347CC00681CB8 /* Apple Watch WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Apple Watch WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		075ADB921E8347CC00681CB8 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
-		075ADB931E8347CC00681CB8 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
 		075ADB951E8347CC00681CB8 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
-		075ADB971E8347CC00681CB8 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		075ADB991E8347CC00681CB8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		075ADB9B1E8347CC00681CB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		372C0BC91E85F5D6000C9BC9 /* Monitor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Monitor.swift; sourceTree = "<group>"; };
+		372C0BCB1E85F5E0000C9BC9 /* Memoria.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Memoria.swift; sourceTree = "<group>"; };
+		372C0BCD1E85F5F5000C9BC9 /* Accesorios.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Accesorios.swift; sourceTree = "<group>"; };
+		372C0BCF1E85F600000C9BC9 /* Resumen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Resumen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,9 +153,11 @@
 		075ADB901E8347CC00681CB8 /* Apple Watch WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				075ADB931E8347CC00681CB8 /* InterfaceController.swift */,
 				075ADB951E8347CC00681CB8 /* ExtensionDelegate.swift */,
-				075ADB971E8347CC00681CB8 /* NotificationController.swift */,
+				372C0BC91E85F5D6000C9BC9 /* Monitor.swift */,
+				372C0BCB1E85F5E0000C9BC9 /* Memoria.swift */,
+				372C0BCD1E85F5F5000C9BC9 /* Accesorios.swift */,
+				372C0BCF1E85F600000C9BC9 /* Resumen.swift */,
 				075ADB991E8347CC00681CB8 /* Assets.xcassets */,
 				075ADB9B1E8347CC00681CB8 /* Info.plist */,
 				075ADB911E8347CC00681CB8 /* Supporting Files */,
@@ -314,9 +320,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				075ADB981E8347CC00681CB8 /* NotificationController.swift in Sources */,
+				372C0BCC1E85F5E0000C9BC9 /* Memoria.swift in Sources */,
+				372C0BD01E85F600000C9BC9 /* Resumen.swift in Sources */,
+				372C0BCA1E85F5D6000C9BC9 /* Monitor.swift in Sources */,
+				372C0BCE1E85F5F5000C9BC9 /* Accesorios.swift in Sources */,
 				075ADB961E8347CC00681CB8 /* ExtensionDelegate.swift in Sources */,
-				075ADB941E8347CC00681CB8 /* InterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -571,6 +579,7 @@
 				075ADBA01E8347CC00681CB8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		075ADBA21E8347CC00681CB8 /* Build configuration list for PBXNativeTarget "Apple Watch WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -579,6 +588,7 @@
 				075ADBA41E8347CC00681CB8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		075ADBA61E8347CC00681CB8 /* Build configuration list for PBXNativeTarget "Apple Watch" */ = {
 			isa = XCConfigurationList;
@@ -587,6 +597,7 @@
 				075ADBA81E8347CC00681CB8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

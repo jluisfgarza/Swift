@@ -1,39 +1,153 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="11055"/>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="11508"/>
     </dependencies>
     <scenes>
-        <!--Interface Controller-->
+        <!--Monitor-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModuleProvider="target"/>
-            </objects>
-            <point key="canvasLocation" x="220" y="345"/>
-        </scene>
-        <!--Static Notification Interface Controller-->
-        <scene sceneID="AEw-b0-oYE">
-            <objects>
-                <notificationController id="YCC-NB-fut">
+                <controller id="AgC-eL-Hgc" customClass="Monitor" customModule="Apple_Watch_WatchKit_Extension">
                     <items>
-                        <label alignment="left" text="Alert Label" id="IdU-wH-bcW"/>
+                        <label alignment="left" text="Tamaño monitor" id="2Xy-X7-oyr"/>
+                        <slider width="1" alignment="left" value="1" maximum="2" steps="2" id="G9H-rA-vSF">
+                            <connections>
+                                <action selector="monitorSlide:" destination="AgC-eL-Hgc" id="CRe-X7-2Ql"/>
+                            </connections>
+                        </slider>
+                        <label alignment="left" text="13 pulgadas" id="9o8-pp-KM2"/>
+                        <button width="1" alignment="left" title="Siguiente" id="kl1-Z0-rUY">
+                            <connections>
+                                <segue destination="TeY-SD-8gN" kind="push" id="pHq-y9-ZbS"/>
+                            </connections>
+                        </button>
                     </items>
-                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
                     <connections>
-                        <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
-                        <segue destination="4sK-HA-Art" kind="relationship" relationship="dynamicNotificationInterface" id="kXh-Jw-8B1"/>
+                        <outlet property="lbPulgadas" destination="9o8-pp-KM2" id="iIP-7q-OQB"/>
                     </connections>
-                </notificationController>
+                </controller>
             </objects>
-            <point key="canvasLocation" x="220" y="643"/>
+            <point key="canvasLocation" x="222" y="345"/>
         </scene>
-        <!--Notification Controller-->
-        <scene sceneID="ZPc-GJ-vnh">
+        <!--Memoria-->
+        <scene sceneID="TR4-z9-sRy">
             <objects>
-                <controller id="4sK-HA-Art" customClass="NotificationController" customModuleProvider="target"/>
+                <controller id="TeY-SD-8gN" customClass="Memoria" customModule="Apple_Watch_WatchKit_Extension">
+                    <items>
+                        <label alignment="left" text="Ram" id="Eq8-o8-Rgp"/>
+                        <slider width="1" alignment="left" value="1" maximum="2" steps="2" id="TEV-mP-OQg">
+                            <connections>
+                                <action selector="ramSlide:" destination="TeY-SD-8gN" id="bkr-kY-N2P"/>
+                            </connections>
+                        </slider>
+                        <label alignment="left" text="8 gb" id="sa3-xr-FhX"/>
+                        <label alignment="left" text="Disco duro" id="Gjm-zM-mnO"/>
+                        <slider width="1" alignment="left" steps="1" id="MG6-gV-X4b">
+                            <connections>
+                                <action selector="discoDuroSlide:" destination="TeY-SD-8gN" id="1aH-re-cyu"/>
+                            </connections>
+                        </slider>
+                        <label alignment="left" text="512 gb" id="uix-nU-xhx"/>
+                        <button width="1" alignment="left" title="Siguiente" id="S0u-w3-T2l">
+                            <connections>
+                                <segue destination="Cyw-a8-sa4" kind="push" id="scO-Kj-ENO"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="lbDiscoDuro" destination="uix-nU-xhx" id="BZx-f6-OKH"/>
+                        <outlet property="lbRam" destination="sa3-xr-FhX" id="fed-SH-QQS"/>
+                    </connections>
+                </controller>
             </objects>
-            <point key="canvasLocation" x="468" y="643"/>
+            <point key="canvasLocation" x="507" y="345"/>
+        </scene>
+        <!--Accesorios-->
+        <scene sceneID="Ina-vL-cD1">
+            <objects>
+                <controller id="Cyw-a8-sa4" customClass="Accesorios" customModule="Apple_Watch_WatchKit_Extension">
+                    <items>
+                        <label alignment="left" text="Accesorios" id="ehv-sD-sFg"/>
+                        <switch width="1" alignment="left" value="YES" title="Audifonos" id="XbY-ZT-fgv">
+                            <connections>
+                                <action selector="switchAudifonos:" destination="Cyw-a8-sa4" id="Aw5-uD-NdC"/>
+                            </connections>
+                        </switch>
+                        <switch width="1" alignment="left" value="YES" title="Mouse" id="dJM-Vj-Lvc">
+                            <connections>
+                                <action selector="switchMouse:" destination="Cyw-a8-sa4" id="kNd-9T-1qO"/>
+                            </connections>
+                        </switch>
+                        <switch width="1" alignment="left" value="YES" title="Teclado" id="d13-QB-IGQ">
+                            <connections>
+                                <action selector="switchTeclado:" destination="Cyw-a8-sa4" id="FYV-oj-yug"/>
+                            </connections>
+                        </switch>
+                        <switch width="1" alignment="left" value="YES" title="Disco duro SSD" id="dsg-Ca-yb5">
+                            <connections>
+                                <action selector="switchSSD:" destination="Cyw-a8-sa4" id="v4P-Nb-dGL"/>
+                            </connections>
+                        </switch>
+                        <button width="1" alignment="left" title="Siguiente" id="VXj-iT-Vl6">
+                            <connections>
+                                <segue destination="7jF-RM-vlZ" kind="push" id="WXD-T5-OyH"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="824" y="346"/>
+        </scene>
+        <!--Resumen-->
+        <scene sceneID="VNs-iQ-wnC">
+            <objects>
+                <controller id="7jF-RM-vlZ" customClass="Resumen" customModule="Apple_Watch_WatchKit_Extension">
+                    <items>
+                        <label alignment="left" text="Resumen" id="8cJ-BT-Gvc">
+                            <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                        </label>
+                        <label alignment="left" text="Tamaño monitor:" id="zKg-6t-Twd"/>
+                        <label alignment="right" text="13 pulgadas" textAlignment="right" id="aeH-Vi-afJ"/>
+                        <label alignment="left" text="Ram:" id="OvO-ga-Gau"/>
+                        <label alignment="right" text="8 gb" textAlignment="right" id="iaZ-ya-MUO"/>
+                        <label alignment="left" text="Disco duro:" id="ETc-KF-cPX"/>
+                        <label alignment="right" text="512 gb" textAlignment="right" id="s7x-jq-lSQ"/>
+                        <label alignment="left" text="Accesorios:" id="wyz-Xf-Vby"/>
+                        <label alignment="right" text="Accesorios" textAlignment="right" numberOfLines="0" id="rx5-M6-onz"/>
+                        <button width="1" alignment="left" title="Comprar" id="arq-aF-iDR">
+                            <connections>
+                                <segue destination="ppg-8d-lzF" kind="push" id="xm2-V0-gbU"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="lbAccesorios" destination="rx5-M6-onz" id="Vmt-yw-Hd1"/>
+                        <outlet property="lbDiscoDuro" destination="s7x-jq-lSQ" id="v3y-6e-bWr"/>
+                        <outlet property="lbMonitor" destination="aeH-Vi-afJ" id="Fhi-D6-77C"/>
+                        <outlet property="lbRam" destination="iaZ-ya-MUO" id="THm-fc-qUb"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="1144" y="345"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="04b-NM-04b">
+            <objects>
+                <controller id="ppg-8d-lzF">
+                    <items>
+                        <label width="1" alignment="left" text="¡Listo!" textAlignment="center" id="iok-uR-4vA">
+                            <fontDescription key="font" type="system" weight="semibold" pointSize="45"/>
+                        </label>
+                        <label alignment="left" verticalAlignment="bottom" text="Tu compra ha sido finalizada" textAlignment="center" numberOfLines="0" id="Ui3-6u-75N"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="1461" y="345"/>
         </scene>
     </scenes>
 </document>
