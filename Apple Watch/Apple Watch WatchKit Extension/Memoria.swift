@@ -2,7 +2,7 @@
 //  Memoria.swift
 //  Apple Watch
 //
-//  Created by Luis Felipe Salazar on 3/24/17.
+//  Created by Juan Luis Flores  on 3/22/17.
 //  Copyright © 2017 Juan Luis Flores . All rights reserved.
 //
 
