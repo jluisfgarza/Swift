@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>tema</key>
+		<string>programacion</string>
+		<key>numCurso</key>
+		<string>197</string>
+		<key>precio</key>
+		<integer>2275</integer>
+	</dict>
+	<dict>
+		<key>tema</key>
+		<string>matematicas</string>
+		<key>numCurso</key>
+		<string>154</string>
+		<key>precio</key>
+		<integer>2143</integer>
+	</dict>
+	<dict>
+		<key>tema</key>
+		<string>fisica</string>
+		<key>numCurso</key>
+		<string>121</string>
+		<key>precio</key>
+		<integer>1838</integer>
+	</dict>
+</array>
+</plist>
