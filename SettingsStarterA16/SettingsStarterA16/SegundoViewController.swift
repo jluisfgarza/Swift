@@ -15,11 +15,10 @@ class SegundoViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
         let defaults = UserDefaults.standard
-        defaults.set(swSonido.isOn, forKey: "sonido")
-        defaults.set(slVolumen.value, forKey: "volumen")
+        swSonido.isOn = defaults.bool(forKey: "sonido")
+        slVolumen.value = defaults.float(forKey: "volumen")
         
     }
 
@@ -29,6 +28,7 @@ class SegundoViewController: UIViewController {
     }
     
     override func viewWillDisappear(_ animated: Bool) {
+
         let defaults = UserDefaults.standard
         defaults.set(swSonido.isOn, forKey: "sonido")
         defaults.set(slVolumen.value, forKey: "volumen")
